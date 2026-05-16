@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Algorus-33 · CSE · University of Rajshahi</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="pc"></canvas>
+    <div class="bw">
+        <div class="b b1"></div>
+        <div class="b b2"></div>
+        <div class="b b3"></div>
+        <div class="b b4"></div>
+    </div>
+
+    <div class="page">
+
+        <!-- NAV -->
+        <nav>
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <img class="logo" src="images/logo.png" alt="logo" />
+                <div class="nl">
+                    <div class="nl-top">ALGORUS'33</div>
+                    <div class="nl-sub">CSERU</div>
+                </div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#hero" class="active" data-section="hero">Home</a>
+                <a href="#members" data-section="members">Members</a>
+                <a href="#cr" data-section="cr">CR</a>
+                <a href="#memories" data-section="memories">Memories</a>
+            </div>
+            <div class="nav-right">
+                <button class="nav-burger" id="navBurger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="nd"></div>
+                <div class="nb">BATCH ACTIVE</div>
+            </div>
+        </nav>
+        <!-- mobile nav -->
+        <div class="nav-mobile" id="navMobile">
+            <a href="#hero">Home</a>
+            <a href="#members">Members</a>
+            <a href="#cr">CR</a>
+            <a href="#memories">Memories</a>
+        </div>
+
+        <!-- HERO -->
+        <section class="hero" id="hero">
+            <div class="he">✦ Department of Computer Science &amp; Engineering ✦</div>
+            <div class="hu">University of Rajshahi · Bangladesh</div>
+            <h1 class="ht">ALGORUS<br><span style="font-size:.55em;letter-spacing:8px;opacity:.85">BATCH 33</span></h1>
+            <div class="hdept">CSE · University of Rajshahi · Session 2024–25</div>
+            <p class="hs">Pioneers of the digital frontier — engineers, innovators, and problem-solvers united under one
+                banner.</p>
+            <div class="hst">
+                <div>
+                    <div class="sn">46</div>
+                    <div class="slb">Students</div>
+                </div>
+                <div>
+                    <div class="sn">8+</div>
+                    <div class="slb">Interests</div>
+                </div>
+                <div>
+                    <div class="sn">∞</div>
+                    <div class="slb">Potential</div>
+                </div>
+            </div>
+            <div class="hsc">
+                <div class="scl"></div><span>Explore</span>
+            </div>
+        </section>
+
+        <!-- SEARCH + FILTER -->
+        <div class="sec-hd" id="members">
+            <div class="stg">✦ Our Members</div>
+            <h2 class="sti">Meet the Batch</h2>
+            <div class="sr"></div>
+        </div>
+
+        <div class="search-area">
+            <div class="sw">
+                <svg class="sic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.35-4.35" />
+                </svg>
+                <input class="si" id="si" type="search" placeholder="Search by name, student ID, or interest…"
+                    autocomplete="off">
+            </div>
+        </div>
+
+        <div class="fb2">
+            <button class="fbtn active" data-f="all">All</button>
+
+            <button class="fbtn" data-f="App Dev">App Dev</button>
+            <button class="fbtn" data-f="Full Stack">Full Stack</button>
+            <button class="fbtn" data-f="AI & ML">AI & ML</button>
+            <button class="fbtn" data-f="Data Science">Data Science</button>
+            <button class="fbtn" data-f="Cybersecurity">Cybersecurity</button>
+            <button class="fbtn" data-f="Cloud & DevOps">Cloud & DevOps</button>
+            <button class="fbtn" data-f="CP & DSA">CP & DSA</button>
+            <button class="fbtn" data-f="UI/UX">UI/UX</button>
+            <button class="fbtn" data-f="IoT & Robotics">IoT & Robotics</button>
+            <button class="fbtn" data-f="Blockchain">Blockchain</button>
+            <button class="fbtn" data-f="Game Dev">Game Dev</button>
+        </div>
+
+        <div class="gw">
+            <div class="res-count" id="rc"></div>
+            <div class="g" id="mg"></div>
+        </div>
+
+        <!-- CR SECTION -->
+        <div class="sec-hd" id="cr">
+            <div class="stg">✦ Class Representative</div>
+            <h2 class="sti">Batch Leadership</h2>
+            <div class="sr"></div>
+        </div>
+
+        <div class="cr-section">
+            <div class="cr-grid" id="crGrid"></div>
+        </div>
+
+        <!-- MEMORIES SECTION -->
+        <div class="sec-hd" id="memories">
+            <div class="stg">✦ Batch Memories</div>
+            <h2 class="sti">Moments We'll Keep</h2>
+            <div class="sr"></div>
+        </div>
+
+        <div class="mem-section">
+            <!-- Featured banner -->
+            <div class="mem-banner">
+                <div class="mem-banner-left">
+                    <span class="mem-banner-year">2025</span>
+                    <div class="mem-banner-label">Algorus-33 · CSE · RU</div>
+                </div>
+                <div class="mem-banner-right">
+                    <div class="mem-banner-title">A Chapter Written Together</div>
+                    <div class="mem-banner-desc">From orientation day jitters to late-night lab sessions, from semester
+                        breakdowns to breakthrough moments — every frame here is a page of our shared story. This is
+                        Batch 33.</div>
+                </div>
+            </div>
+
+            <!-- Photo grid -->
+            <div class="mem-grid" id="memGrid"></div>
+        </div>
+
+        <footer>
+            <span>&copy ALGORUS-33</span> · Dept. of CSE · University of Rajshahi · <span>2025</span><br>
+            <span style="color:rgba(255,255,255,.25);font-size:9px;letter-spacing:1px;margin-top:8px;display:block">Made
+                with ♥ by Batch 33</span>
+        </footer>
+    </div><!-- .page -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
