@@ -68,7 +68,7 @@ let M = [
   },
   {
     "n": "SAMIO AWAL USNO ",
-    "ht": "PABNA",
+    "ht": "",
     "hall": "Shahid Ziaur Rahman Hall",
     "s": "m",
     "photo": "images/members/2511076102.jpg",
@@ -93,7 +93,7 @@ let M = [
     "ht": "DHAKA",
     "hall": "Shahid Habibur Rahman Hall",
     "s": "m",
-    "photo": "",
+    "photo": "images/members/2510676103.jpg",
     "id": "2510676103",
     "foi": [
       "AI & ML"
@@ -404,7 +404,7 @@ let M = [
     "ht": "KUSHTIA ",
     "hall": "Shahid Ziaur Rahman Hall",
     "s": "m",
-    "photo": "",
+    "photo": "images/members/2511076121.jpg",
     "id": "2511076121",
     "foi": [
       "IoT & Robotics",
